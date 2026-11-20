@@ -101,11 +101,12 @@ button { font: inherit; }
 .page-user { display: flex; flex-direction: column; align-items: center; padding: 22px 13px calc(var(--nav-height) + 18px); text-align: center; background-color: var(--lime); }
 .page-user .header { position: absolute; top: 14px; right: max(18px, calc((100vw - var(--page-width))/2 + 18px)); display: flex; gap: 16px; }
 .page-user .header img { width: 24px; height: 24px; margin: 0; object-fit: contain; }
-.page-user .photo-utilisatrice { position: relative; width: min(70vw, 200px); aspect-ratio: 1; margin: 5px auto 0; }
-.page-user .photo-utilisatrice > img { display: block; width: 100%; height: 100%; margin: 0; border: 5px solid var(--ink); border-radius: 50%; object-fit: cover; }
+.page-user .photo-utilisatrice { width: min(70vw, 250px); margin: 5px auto 24px; }
+.page-user .photo-utilisatrice > img { display: block; width: 100%; height: auto; margin: 0; }
 .page-user h2 { margin: 0 0 28px; font-size: 16px; font-style: italic; font-weight: 900; }
 .page-user .profile-actions { display: grid; width: 100%; gap: 9px; }
-.page-user .profile-actions > div { position: relative; display: flex; min-height: 48px; align-items: center; justify-content: center; padding: 8px 42px; border: 2px solid var(--ink); border-radius: 9px; background: var(--ink); box-shadow: 0 3px 0 #0003; }
+.page-user .profile-actions > div, .page-user .profile-actions > a { position: relative; display: flex; min-height: 48px; align-items: center; justify-content: center; padding: 8px 42px; border: 2px solid var(--ink); border-radius: 9px; background: var(--ink); box-shadow: 0 3px 0 #0003; }
+.page-user .profile-actions > a { text-decoration: none; }
 .page-user .profile-actions > div:nth-child(2) { background: var(--pink); }
 .page-user .profile-actions img { position: absolute; left: 25px; width: 18px; height: 18px; margin: 0; object-fit: contain; }
 .page-user .profile-actions p { margin: 0; color: var(--paper); font-size: 12px; font-style: italic; font-weight: 900; }
